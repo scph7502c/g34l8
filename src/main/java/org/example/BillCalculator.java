@@ -1,5 +1,4 @@
 package org.example;
-
 public class BillCalculator {
 
     public double calculate(double billValue, float serviceCharge) {
