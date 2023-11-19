@@ -3,12 +3,12 @@ package org.example;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
-public class CircleWithInterfaceTest {
+public class CircleTest {
 
     @Test
     public void checkCircleAreaAndPerimeter() {
         // given
-        CircleWithInterface circle = new CircleWithInterface(3);
+        Circle circle = new Circle(3);
 
         // when
         double area = circle.getArea();

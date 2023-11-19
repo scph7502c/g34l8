@@ -1,9 +1,9 @@
 package org.example;
 
-public class CircleWithInterface implements AreaPerimeter {
+public class Circle implements AreaPerimeter {
     private double radius;
 
-    public CircleWithInterface(double radius) {
+    public Circle(double radius) {
         this.radius = radius;
     }
 

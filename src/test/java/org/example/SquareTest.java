@@ -4,12 +4,12 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class SquareWithInterfaceTest {
+public class SquareTest {
 
     @Test
     public void checkSquareAreaAndPerimeter() {
         // given
-        SquareWithInterface square = new SquareWithInterface(5);
+        Square square = new Square(5);
 
         // when
         double area = square.getArea();

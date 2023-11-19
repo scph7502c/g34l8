@@ -1,9 +1,9 @@
 package org.example;
 
-public class SquareWithInterface implements AreaPerimeter {
+public class Square implements AreaPerimeter {
     private double side;
 
-    public SquareWithInterface(double side) {
+    public Square(double side) {
         this.side = side;
     }
 
