@@ -1,8 +1,12 @@
 package org.example;
 
-class LowerCase implements TextFormatter {
+class LowerCaseFormatter implements TextFormatter {
     @Override
     public String formatText(String text) {
-        return text.toLowerCase();
+        if (text == null) {
+            return "";
+        } else {
+            return text.toLowerCase();
+        }
     }
 }

@@ -8,7 +8,7 @@ public class UpperCaseTest {
     @Test
     public void checkUpperCase() {
         // given
-        UpperCase formatter = new UpperCase();
+        UpperCaseFormatter formatter = new UpperCaseFormatter();
         String inputText = "future collars";
 
         // when
@@ -16,5 +16,18 @@ public class UpperCaseTest {
 
         // then
         assertEquals("FUTURE COLLARS", formattedText);
+    }
+
+    @Test
+    public void checkIfUpperCaseIsNull() {
+        // given
+        UpperCaseFormatter formatter = new UpperCaseFormatter();
+        String inputText = null;
+
+        // when
+        String formattedText = formatter.formatText(inputText);
+
+        // then
+        assertEquals("", formattedText);
     }
 }

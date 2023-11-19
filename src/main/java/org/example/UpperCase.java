@@ -1,8 +1,12 @@
 package org.example;
 
-class UpperCase implements TextFormatter {
+class UpperCaseFormatter implements TextFormatter {
     @Override
     public String formatText(String text) {
-        return text.toUpperCase();
+        if (text == null) {
+            return "";
+        } else {
+            return text.toUpperCase();
+        }
     }
 }
